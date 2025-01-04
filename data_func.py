@@ -1,7 +1,7 @@
 import sqlite3   #тут импортируем библиотеку для работы с БД на sqlite
 from randomizer import random_token    # импортируем генерацию токена
 
-connection = sqlite3.connect('database.db')   #тут подключаемся к БД
+connection = sqlite3.connect('database.db')
 cursor = connection.cursor()
 
 

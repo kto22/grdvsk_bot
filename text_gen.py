@@ -1,7 +1,7 @@
 # файл генерации текста
 from langchain_ollama import ChatOllama    # импортируем фреймворк взаимодействия с нейронками
 from langchain_core.callbacks import CallbackManager, StreamingStdOutCallbackHandler
-from deep_translator import GoogleTranslator    # импортим переводчик
+from deep_translator import GoogleTranslator
 
 
 async def generate_text(model, message):    # функция генерации текста

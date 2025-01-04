@@ -13,7 +13,7 @@ async def add_text_to_image(text, font_path, font_size, text_color, text_positio
     n = i//32+1
 
 
-    image = Image.open(f'images/{randint(1,4)}.jpg')    # открываем рандомное изображение
+    image = Image.open(f'images/{randint(1,4)}.jpg')
     image = image.resize((480, 480))    # изменяем его размер под свой стандарт
     draw = ImageDraw.Draw(image)
 

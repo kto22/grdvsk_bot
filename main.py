@@ -9,8 +9,7 @@ from dotenv import load_dotenv, find_dotenv
 
 import handler    # импортим файл обработки сообщений
 
-load_dotenv(find_dotenv())    # подгружаем файлик .env
-
+load_dotenv(find_dotenv())
 
 # ну всё дальше - это дефолтная конструкция из документации аиограма
 

@@ -74,8 +74,8 @@ async def any_message(message: Message):    # функция обработки 
     print(message.text)
     model = await data_func.get_model(chat_id)    # получение выбранной пользователем модели из БД
     msg = await text_gen.generate_text(model, message.text)    # получение сгенерированного текста
-    await image_create.add_text_to_image(msg,    # создание изображения
-                      'fonts/Andy_Bold_0.otf', 32, (0, 0, 0), (0, 255, 0), chat_id)
+    await image_create.add_text_to_image(msg,  # создание изображения
+                                         'fonts/Andy_Bold.otf', 32, (0, 0, 0), (0, 255, 0), chat_id)
     photo = FSInputFile(f'images/{chat_id}.jpg')
     await message.answer_photo(photo=photo)    # отправка изображения
 
